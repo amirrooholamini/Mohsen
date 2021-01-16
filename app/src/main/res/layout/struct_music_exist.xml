@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/p90h"
+            app:layout_constraintEnd_toStartOf="@+id/p80v"
+            app:layout_constraintStart_toStartOf="@+id/p10v"
+            app:layout_constraintTop_toTopOf="@+id/p10h">
+
+            <TextView
+                android:id="@+id/txtMusicName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical"
+                android:padding="2dp"
+                android:shadowColor="#111"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:text="بهت قول میدم"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/persian"
+                    android:text="2.3"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:progressTint="#ff226d"
+                    android:rating="2.3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCover"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/p90h"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/p95v"
+            app:layout_constraintStart_toStartOf="@+id/p80v"
+            app:layout_constraintTop_toTopOf="@+id/p10h" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:background="#0000"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/p90h"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/p10v"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/p10h"
+            app:srcCompat="@drawable/option" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#2a2a2a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgCover"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p5v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p10v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p80v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p95v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p10h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/p90h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

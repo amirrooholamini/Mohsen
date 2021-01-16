@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thumb">5dp</dimen>
+    <dimen name="notification_text_size">15sp</dimen>
+    <dimen name="notification_medium_text_size">10sp</dimen>
+    <dimen name="notification_small_text_size">7sp</dimen>
+</resources>

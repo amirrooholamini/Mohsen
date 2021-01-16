@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.com.i3center.rooholamini.mohsen">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name="project.activities.ActivityAlbumsList"></activity>
+        <activity android:name="project.activities.ActivityFavoritesMusics" />
+        <activity
+            android:name="project.activities.ActivityMusicDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="project.activities.ActivityMusicsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="project.activities.ActivityStart"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="project.broadcast_receiver.NotificationReceiver" />
+
+        <service android:name="project.services.MusicPlayer" />
+        <service android:name="project.services.DownloaderService" />
+    </application>
+
+</manifest>

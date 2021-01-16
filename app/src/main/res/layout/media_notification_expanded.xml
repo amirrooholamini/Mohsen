@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#eeeeee"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgCover"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/music" />
+
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/notification_background"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/persian"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="بهت قول میدم"
+                    android:textColor="#111"
+                    android:textSize="@dimen/notification_medium_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/notification_next_previous_selection"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notification_pre" />
+
+                <ImageView
+                    android:id="@+id/imgAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/notification_buttons_selection"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/notification_pause" />
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/notification_next_previous_selection"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notification_next" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/notification_buttons_selection"
+        android:foregroundGravity="center"
+        android:padding="2dp"
+        android:src="@drawable/close_black" />
+
+</RelativeLayout>

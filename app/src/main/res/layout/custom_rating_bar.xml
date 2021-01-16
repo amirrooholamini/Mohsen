@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:src="@drawable/star_empty"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:src="@drawable/star_empty"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:src="@drawable/star_empty"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:src="@drawable/star_empty"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:src="@drawable/star_empty"
+            android:tag="5" />
+
+    </LinearLayout>
+
+</LinearLayout>

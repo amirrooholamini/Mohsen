@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/high_volume" />
+
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/notification_buttons_selection"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/close_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/notification_next_previous_selection"
+            android:scaleType="centerCrop"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/notification_pre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgClose"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgAction"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/notification_buttons_selection"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notification_pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPrevious"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/notification_next_previous_selection"
+            android:scaleType="centerCrop"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/notification_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgAction"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/persian"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="بهت"
+            android:textColor="#111"
+            android:textSize="@dimen/notification_small_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgNext"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgCover"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/music" />
+
+    </LinearLayout>
+
+</RelativeLayout>
